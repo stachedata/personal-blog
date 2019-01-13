@@ -5,7 +5,7 @@ import React from 'react'
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: `rebeccapurple`,
+      background: `black`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -22,13 +22,31 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
+            fontSize: `25px`
           }}
         >
           {siteTitle}
         </Link>
       </h1>
+
+      {/* This is DRY and will need to be updated.
+      <h2>
+        <Link
+          to="/page-2"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+            fontSize: `25px`
+          }}
+        >
+          Slug needed here
+        </Link>
+      </h2> */}
+
     </div>
   </div>
+
+
 )
 
 Header.propTypes = {
