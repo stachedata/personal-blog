@@ -1,0 +1,16 @@
+.background{
+    background: black;
+    margin-bottom: 1.45rem;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.siteTitle{
+    margin: 0;
+    max-width: 960;
+    padding: 1.45rem 1.0875rem;
+}
