@@ -6,29 +6,19 @@ import styles from './header.module.css'
 const Header = ({ siteTitle }) => (
   <div className={styles.background}>
     <div className={styles.siteTitle}>
-      <h1>
+      <h2>
         <Link to="/" className={styles.link}>
           {siteTitle}
         </Link>
-      </h1>
+      </h2>
 
-      {/* This is DRY and will need to be updated.
-      <h2>
-        <Link
-          to="/page-2"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-            fontSize: `25px`
-          }}
-        >
-          Slug needed here
+      <h3>
+        <Link to="/page-2" className={styles.link}>
+          Page 2
         </Link>
-      </h2> */}
+      </h3>
     </div>
   </div>
-
-
 )
 
 Header.propTypes = {
