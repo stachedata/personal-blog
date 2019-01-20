@@ -5,14 +5,13 @@ import Layout from '../components/layout'
 import Image from '../components/image'
 import SEO from '../components/seo'
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-
+    {data.allMarkdownRemark.edges.map(({node}, index) => (
+        <h4  key={index}>{node.frontmatter.title}</h4>
+    ))}
   </Layout>
 )
-
-export default IndexPage
 
 export const query = graphql`
   query {
@@ -28,6 +27,7 @@ export const query = graphql`
         }
       }
     }
-  }
-`
+  }`
+
+export default IndexPage
 
