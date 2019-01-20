@@ -23,17 +23,23 @@ const Layout = ({ children }) => (
           style={{
             margin: `0 auto`,
             maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
+            padding: `3.25rem 5rem`,
+
           }}
         >
           {children}
-          <footer>
+          
+        </div>
+        <footer 
+          style={{
+            position: `fixed`,
+            bottom: 0,
+            margin: 10
+          }}>
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
-        </div>
       </>
     )}
   />
