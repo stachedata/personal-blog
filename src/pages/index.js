@@ -1,16 +1,20 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
-import Image from '../components/image'
-import SEO from '../components/seo'
 
 const IndexPage = ({data}) => (
+  
   <Layout>
     {data.allMarkdownRemark.edges.map(({node}, index) => (
-        <h4  key={index}>{node.frontmatter.title}</h4>
+        <div key={index}>
+          <Link to={node.fields.slug}>
+            <span>{node.frontmatter.title}</span>
+            <span> - {node.frontmatter.date}</span>
+          </Link>
+        </div>
     ))}
   </Layout>
+  
 )
 
 export const query = graphql`
@@ -18,12 +22,13 @@ export const query = graphql`
     allMarkdownRemark {
       edges {
         node {
-          id
           frontmatter {
             title
-            date
+            date(formatString: "DD MMMM, YYYY")
           }
-          excerpt
+          fields {
+            slug
+          }
         }
       }
     }
