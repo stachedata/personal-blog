@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
 .background{
     background: black;
-    margin-bottom: 1.45rem; 
+    height: 75px;
 }
 
 .link{
     color: white;
     text-decoration: none;
+    font-family: 'Major Mono Display', monospace;
 }
 
 .siteTitle{
-    margin: 0;
     max-width: 960;
     padding: 1.45rem 1.0875rem;
     display: flex;
