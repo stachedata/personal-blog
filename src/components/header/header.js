@@ -13,8 +13,8 @@ const Header = ({ siteTitle }) => (
       </h2>
 
       <h3>
-        <Link to="/page-2" className={styles.link}>
-          Page 2
+        <Link to="/about" className={styles.link}>
+          About
         </Link>
       </h3>
     </div>
