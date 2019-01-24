@@ -6,8 +6,21 @@ const IndexPage = ({data}) => (
   
   <Layout>
     {data.allMarkdownRemark.edges.map(({node}, index) => (
-        <div key={index}>
-          <Link to={node.fields.slug}>
+        <div 
+          key={index} 
+          style={{
+            padding: '2rem',
+            textAlign: 'center'
+          }}
+        >
+          <Link 
+            to={node.fields.slug}
+            style={{
+              color: 'black',
+              textDecoration: 'none'
+
+            }}
+          >
             <span>{node.frontmatter.title}</span>
             <span> - {node.frontmatter.date}</span>
           </Link>
