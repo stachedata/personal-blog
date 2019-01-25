@@ -1,9 +1,17 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 
 const IndexPage = ({data}) => (
-  
+<>
+  <div 
+    style={{
+      textAlign: 'center',
+      marginTop: '50px'
+    }}>
+    <h3>Words from a Dude</h3>
+    <Link to="/about">About the Dude</Link>
+  </div>
   <Layout>
     {data.allMarkdownRemark.edges.map(({node}, index) => (
         <div 
@@ -27,7 +35,7 @@ const IndexPage = ({data}) => (
         </div>
     ))}
   </Layout>
-  
+</>
 )
 
 export const query = graphql`
