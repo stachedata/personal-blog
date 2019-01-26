@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import profileImg from '../images/dude.png' 
 
 const IndexPage = ({data}) => (
 <>
@@ -9,6 +10,7 @@ const IndexPage = ({data}) => (
       textAlign: 'center',
       margin: '50px 0 50px 0'
     }}>
+    <img src={profileImg} alt='dude'></img>
     <h3>Words from a Dude</h3>
     <Link 
       to="/about"
@@ -24,10 +26,9 @@ const IndexPage = ({data}) => (
           style={{
             padding: '2% 0',
             textAlign: 'center',
-            border: 'solid',
-            margin: '0 18rem',
-            // minWidth: '500px',
-            // maxWidth: '500px'
+            margin: '0 auto',
+            minWidth: '500px',
+            maxWidth: '500px',
           }}
         >
           <Link 
@@ -37,7 +38,6 @@ const IndexPage = ({data}) => (
               textDecoration: 'none',
               padding: '15px 10px',
               display: 'flex',
-              justifyContent: 'space-between',
               alignItems: 'baseline'
             }}
           >
@@ -45,11 +45,12 @@ const IndexPage = ({data}) => (
               style={{
                 borderTopStyle: 'double',
                 borderBottomStyle: 'double',
-                padding: '15px 10px'
+                padding: '15px 20px',
+                margin: '0 50px 0 35px',
+                whiteSpace: 'nowrap',
+                fontStyle: 'italic'
               }}>{node.frontmatter.date}</span>
-            <span 
-              style={{
-              }}>{node.frontmatter.title}</span>
+            <span>{node.frontmatter.title}</span>
           </Link>
         </div>
     ))}
