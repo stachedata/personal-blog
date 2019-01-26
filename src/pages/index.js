@@ -7,30 +7,49 @@ const IndexPage = ({data}) => (
   <div 
     style={{
       textAlign: 'center',
-      marginTop: '50px'
+      margin: '50px 0 50px 0'
     }}>
     <h3>Words from a Dude</h3>
-    <Link to="/about">About the Dude</Link>
+    <Link 
+      to="/about"
+      style={{
+        color: 'black',
+        textDecoration: 'none',
+      }}>About the Dude</Link>
   </div>
   <Layout>
     {data.allMarkdownRemark.edges.map(({node}, index) => (
         <div 
           key={index} 
           style={{
-            padding: '2rem',
-            textAlign: 'center'
+            padding: '2% 0',
+            textAlign: 'center',
+            border: 'solid',
+            margin: '0 18rem',
+            // minWidth: '500px',
+            // maxWidth: '500px'
           }}
         >
           <Link 
             to={node.fields.slug}
             style={{
               color: 'black',
-              textDecoration: 'none'
-
+              textDecoration: 'none',
+              padding: '15px 10px',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'baseline'
             }}
           >
-            <span>{node.frontmatter.title}</span>
-            <span> - {node.frontmatter.date}</span>
+            <span 
+              style={{
+                borderTopStyle: 'double',
+                borderBottomStyle: 'double',
+                padding: '15px 10px'
+              }}>{node.frontmatter.date}</span>
+            <span 
+              style={{
+              }}>{node.frontmatter.title}</span>
           </Link>
         </div>
     ))}
