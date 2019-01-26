@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
 
 .background{
-    background: black;
     height: 75px;
 }
 
 .link{
-    color: white;
+    color: black;
     text-decoration: none;
-    font-family: 'Major Mono Display', monospace;
 }
 
 .siteTitle{
