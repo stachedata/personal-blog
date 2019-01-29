@@ -3,12 +3,13 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styles from './header.module.css'
 
+
 const Header = ({ siteTitle }) => (
   <div className={styles.background}>
     <div className={styles.siteTitle}>
       <h2>
         <Link to="/" className={styles.link}>
-          {siteTitle}
+          Dude Blog
         </Link>
       </h2>
 
