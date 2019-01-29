@@ -11,12 +11,13 @@ const IndexPage = ({data}) => (
       margin: '50px 0 50px 0'
     }}>
     <img src={profileImg} alt='dude'></img>
-    <h3>Words from a Dude</h3>
+    <h3 style={{fontSize: '26px'}}>Words from a Dude</h3>
     <Link 
       to="/about"
       style={{
         color: 'black',
         textDecoration: 'none',
+        fontSize: '17px'
       }}>About the Dude</Link>
   </div>
   <Layout>
@@ -38,7 +39,8 @@ const IndexPage = ({data}) => (
               textDecoration: 'none',
               padding: '15px 10px',
               display: 'flex',
-              alignItems: 'baseline'
+              alignItems: 'baseline',
+              fontSize: '17px'
             }}
           >
             <span 
