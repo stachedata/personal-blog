@@ -6,7 +6,12 @@ const AboutPage = () => (
   <>
     <Header></Header>
     <Layout>
-      <p>Welcome to About page</p>
+      <h3
+        style={{
+          textAlign: 'center',
+          margin: '75px'
+        }}
+      >Welcome to About page</h3>
     </Layout>
   </>
 )
