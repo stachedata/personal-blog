@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: stachedata/personal-blog
 
 media_folder: src/pages/images
 public_folder: src/pages/images
