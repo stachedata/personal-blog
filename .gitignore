@@ -58,9 +58,8 @@ typings/
 .cache/
 public/*
 !public/static/
-
-public/static/*
-!public/static/admin/
+public/static/6d91c86c0fde632ba4cd01062fd9ccfa/
+public/static/d/
 
 # Mac files
 .DS_Store
