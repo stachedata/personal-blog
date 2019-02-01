@@ -1,5 +1,5 @@
 backend:
-  name: repo
+  name: git-gateway
 
 media_folder: src/pages/images
 public_folder: src/pages/images
