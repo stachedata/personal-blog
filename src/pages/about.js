@@ -11,7 +11,8 @@ const AboutPage = () => (
           textAlign: 'center',
           margin: '75px'
         }}
-      >Welcome to About page</h3>
+      >My name is Chris and I am a Web Developer.</h3>
+
     </Layout>
   </>
 )
