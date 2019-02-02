@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import profileImg from './images/dude.png' 
 
@@ -45,14 +45,19 @@ const IndexPage = ({data}) => (
           >
             <span 
               style={{
+                boxSizing: 'content-box',
+                width: '25%',
                 borderTopStyle: 'double',
                 borderBottomStyle: 'double',
+                border: '25px 25px',
                 padding: '15px 20px',
-                margin: '0 50px 0 35px',
+                margin: '0 50px 0 5px',
                 whiteSpace: 'nowrap',
-                fontStyle: 'italic'
+                fontStyle: 'italic',
               }}>{node.frontmatter.date}</span>
-            <span>{node.frontmatter.title}</span>
+            <span
+              style={{flexWrap: 'wrap'}}
+            >{node.frontmatter.title}</span>
           </Link>
         </div>
     ))}
