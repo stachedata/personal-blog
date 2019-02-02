@@ -40,7 +40,8 @@ const IndexPage = ({data}) => (
               padding: '15px 10px',
               display: 'flex',
               alignItems: 'baseline',
-              fontSize: '17px'
+              fontSize: '17px',
+              flexWrap: 'wrap'
             }}
           >
             <span 
@@ -55,9 +56,7 @@ const IndexPage = ({data}) => (
                 whiteSpace: 'nowrap',
                 fontStyle: 'italic',
               }}>{node.frontmatter.date}</span>
-            <span
-              style={{flexWrap: 'wrap'}}
-            >{node.frontmatter.title}</span>
+            <span>{node.frontmatter.title}</span>
           </Link>
         </div>
     ))}
