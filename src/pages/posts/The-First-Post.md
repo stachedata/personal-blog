@@ -1,7 +1,7 @@
-==
-date: 02-02-2019
+---
+date: "2019-02-02"
 title: The First Post
-==
+---
 
 This shall mark the official first post to my blog. I've deleted and left my previous test posts in the trash. Moving forward will be authentic posts curated by myself. Currently, theres no direction as far as what my posts will be about. For now, they will be spontaneous. Eventually, they form categories, which I'll filter out accordingly.
 
